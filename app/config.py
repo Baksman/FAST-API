@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     database_name:str
     secret_key:str
     algorithm:str
-    access_expire:str
+    access_expire:int
 
 
     class Config:
