@@ -17,3 +17,7 @@ alembi revision --autogenerate -m "commit message"
 # requiremnt.txt
 pip freeze > requirement.txt
 pip install -r requirement.txt
+
+# heroku
+heroku logs -t
+heroku ps restart
