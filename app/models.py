@@ -8,8 +8,9 @@ from sqlalchemy.sql.expression import text
 class Post(Base):
     __tablename__ = 'posts'
 
-    id = Column(Integer, primary_key=True, index=True, nullable=False)
+   
     content = Column(String, nullable=False)
+    id = Column(Integer, primary_key=True, index=True, nullable=False)
     title = Column(String, nullable=False)
     is_published = Column(Boolean, server_default='TRUE', nullable=False)
     created_at = Column(TIMESTAMP(timezone=True),
